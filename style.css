@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oswald:wght@700&family=Roboto:ital,wght@0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #020104;
+}
+.mainmain{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.blurcircle1{
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    background-color: #3D1B9F;
+    filter: blur(180px);
+}
+.blurcircle2{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 250px;
+    height: 250px;
+    background-color: #3D1B9F;
+    filter: blur(180px);
+}
+.blurcircle3{
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 230px;
+    height: 230px;
+    background-color: #3D1B9F;
+    filter: blur(200px);
+}
+.blurcircle4{
+    position: absolute;
+    top: 30%;
+    right: -100px;
+    width: 250px;
+    height: 250px;
+    background-color: #3D1B9F;
+    filter: blur(200px);
+}
+.blurcircle5{
+    position: absolute;
+    bottom: -350px;
+    left: 30%;
+    width: 250px;
+    height: 250px;
+    background-color: #3D1B9F;
+    filter: blur(190px);
+}
+.topspace{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.titleavengers{
+    width: 100%;
+    height: 240px;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avengerslogo{
+    margin-top: 20px;
+    width: 500px; 
+    transform: translateY(300px);
+}
+.mysticstone{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(241, 241, 241);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 420px;
+    background-color: #3c1b9f36;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(to bottom, #1909466b, rgba(0, 0, 0, 0.7)),  url('./AvengerAssets/AvengersFull.png');
+    background-size: cover;
+    overflow: hidden;
+}
+svg{
+    width: 200px;
+}
+.ironmanfly{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 300px;
+    opacity: 0;
+}
+.hulkjump{
+    position: absolute;
+    top: 600px;
+    right: 0px;
+    width: 330px;
+    z-index: -1;
+}
+.aboutavengers{
+    transform: translateY(500px);
+    opacity: 0;
+}
+@media(max-width:951px){
+    .avengerslogo{
+        width: 400px;
+    }
+    .mysticstone{
+        width: 350px;
+        height: 500px;
+    }
+    .ironmanfly{
+        width: 200px;
+    }
+    .hulkjump{
+        width:220px;
+    }
+}
+@media(max-width:700px){
+    .ironmanfly{
+        left: -250px;
+    }
+}
+.websitecontainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.camain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardca{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.shield{
+    clip-path: circle(100px);
+    visibility: hidden;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+.cardca:hover .shield{
+    visibility: visible;
+    clip-path: circle(500px);
+}
+.shieldicon{
+    position: absolute;
+    width: 150px;
+    transition: 0.8s;
+}
+.cardca:hover .shieldicon{
+    transform: translateY(200%) rotate(360deg);
+}
+.cacontent{
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    height: 80px;
+    overflow: hidden;
+}
+.cacontent h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 33px;
+    background: -webkit-linear-gradient(#424A57 50%, #B2BAC4, #EBF1F6 );
+  -webkit-background-clip: text;
+  transition: 0.8s;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(200%);
+}
+.cacontent h3{
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Kanit', sans-serif;
+    background: -webkit-linear-gradient(#424A57 70%, #B2BAC4, #EBF1F6 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(150%);
+  transition: 0.9s;
+}
+.cardca:hover h1{
+    transform: translateY(0%);
+}
+.cardca:hover h3{
+    transform: translateY(0%);
+}
+.caright{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    transition: 0.8s;
+    transform: translateX(120%);
+}
+.cardca:hover .caright{
+    transform: translateX(0%);
+}
+.caleft{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 100px;
+    transition: 0.5s;
+    transform: translateX(-120%)
+}
+.cardca:hover .caleft{
+    transform: translateX(0%);
+}
+@media(max-width:700px){
+    .caright{
+        width: 160px;
+    }
+    .caleft{
+        width: 80px;
+    }
+}
+.immain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imcard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.circle{
+    visibility: hidden;
+    content: '';
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background: radial-gradient(#C93241 30%,#DEB95C );
+    background-color: #C93241 ;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+}
+.imcard:hover .circle{
+    visibility: visible;
+    clip-path: circle(500px);
+}
+.img-logo{
+    position: absolute;
+    width: 150px;
+    left: 38%;
+    top: 28%;
+    transition: 0.8s;
+}
+.imcard:hover .img-logo{
+    transform: translateY(200%);
+}
+.img1{
+    position: absolute;
+    top: 58%;
+    width: 150px;
+    transform: translateX(-100%);
+    transition: 0.8s;
+}
+.img2{
+    position: absolute;
+    width: 160px;
+    top: 10%;
+    left: 70%;
+    transform: translateY(110%);
+    transition: 0.8s;
+}
+.img3{
+    position: absolute;
+    width: 100px;
+    left: 40%;
+    top: 5%;
+    transform: translateY(-100%);
+    transition: 0.8s;
+}
+.img4{
+    position: absolute;
+    width: 40px;
+    top: 2%;
+    left: 1%;
+    transform: translateX(-120%);
+    transition: 0.8s;
+}
+.imcard:hover .img4{
+    transform: translateX(10%);
+}
+.imcard:hover .img3{
+    transform: translateY(35%);
+
+}
+.imcard:hover .img2{
+    transform: translateY(-5%);
+}
+.imcard:hover .img1{
+    transform: translateX(1%);
+    transform: translateY(-15%);
+}
+.content{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+}
+.content h1{
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+.imcard:hover .content h1{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:700px){
+    .circle{
+        visibility: hidden;
+    }
+    .imcard:hover{
+        width:380px;
+        height: 500px;
+    }
+    .imcard:hover .circle{
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+    }
+    .imcard:hover h1{
+        font-size: 35px;
+    }
+    .imcard:hover .img-logo{
+        transform: translateY(500%);
+    }
+    .imcard:hover .img3{
+        top: 15%;
+    }
+    .img-logo{
+        left: 34%;
+    }
+}
+.smcard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+.smcircle{
+    visibility: hidden;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background: linear-gradient(to bottom, #d41319 ,#af2b2f);
+    background-color: #D41319 ;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smcard:hover .smcircle{
+    clip-path: circle(500px);
+    visibility: visible;
+}
+.smcontent{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8s;
+    transform: translateX(-500px);
+}
+.smtitle{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    margin-top: -50px;
+    font-size: 42px;
+    color: white;
+    background: -webkit-linear-gradient(#397CA7 30%, #163776, #07143F );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.smmarvel{
+    width: 100px;
+}
+.smtop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    transition: 0.6s;
+    transform: translateY(-200px);
+}
+.smright{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 180px;
+    transition: 0.6s;
+    transform: translateX(200px);
+}
+.smdown{
+    position: absolute;
+    bottom: -10px;
+    left: 35%;
+    width: 110px;
+    transition: 0.6s;
+    transform: translateY(200px);
+    display: none;
+}
+.smcard:hover .smcontent{
+    transform: translateX(0px);
+}
+.smcard:hover .smtop{
+    transform: translateY(0px);
+}
+.smcard:hover .smright{
+    transform: translateX(0px);
+}
+.smcard:hover .smdown{
+    transform: translateY(0px);
+}
+.smlogo{
+    position: absolute;
+    width: 130px;
+    transition: 0.5s;
+}
+.smcard:hover .smlogo{
+    transform: translateY(300%);
+}
+@media(max-width:850px){
+    .smcard{
+        width:380px;
+        height:500px;
+    }
+    .smcircle{
+        width: 380px;
+        height: 500px;
+    }
+    .smtitle{
+        margin-top: 200px;
+    }
+    .smmarvel{
+        margin-bottom: -240px;
+    }
+    .smdown{
+        width: 150px;
+        display: block;
+    }
+}
+@media(max-width:1325px){
+    .websitecontainer{
+        flex-direction: column;
+    }
+}
