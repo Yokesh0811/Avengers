@@ -20,3 +20,15 @@ gsap.to(".ironmanfly", {
     y : -200,
     duration:2,
 });
+gsap.to(".falconfly", {
+    scrollTrigger: {
+        trigger:".webpage2",
+        start:"top",
+        endTrigger: ".webpage3",
+        end:"top",
+        scrub:1,
+    },
+    x : 800,
+    y : -500,
+    duration:2,
+});
