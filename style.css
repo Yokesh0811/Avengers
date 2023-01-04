@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&family=Oswald:wght@700&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&family=Merriweather:wght@900&family=Oswald:wght@700&family=Roboto:ital,wght@1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -24,11 +24,14 @@ body{
 .blurcircle2{
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 45%;
     width: 250px;
     height: 250px;
     background-color: #3D1B9F;
     filter: blur(180px);
+}
+.blurcircle22{
+    top: 60%;
 }
 .blurcircle3{
     position: absolute;
@@ -580,6 +583,191 @@ svg{
     }
     .thcard:hover .hulkleft{
         scale: 1.8;
+    }
+}
+.dscard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dscircle{
+    visibility: hidden;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background:linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background-size: cover;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dscard:hover .dscircle{
+    clip-path: circle(500px);
+    visibility: visible;
+}
+.dslogo{
+    position: absolute;
+    width: 120px;
+    transition: 0.5s;
+}
+.dscard:hover .dslogo{
+    transform: rotate(90deg) scale(1.8);
+    opacity: 0;
+}
+.dstitle{
+    font-family: 'Merriweather', serif;
+    background: -webkit-linear-gradient( #E7E4DE, #DDCCAB, #9E9187, #B1A398, #B3AFAC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dscontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsmarvel{
+    margin-top: -70px;
+    position: absolute;
+    width: 100px;
+}
+.dsleft{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 140px;
+    transition: 1s;
+}
+.dscard:hover .dsleft{
+    transform: translateX(-360px);
+}
+.dsright{
+    position: absolute;
+    right: 93px;
+    bottom: 0;
+    width: 130px;
+    transition: 0.8s;
+}
+.dscard:hover .dsright{
+    transform: translate(100px,-100px);
+}
+@media(max-width:751px){
+    .dscard{
+        width:380px;
+        height:485px;
+    }
+    .dscircle{
+        width: 380px;
+        height: 485px;
+    }
+    .dsright{
+        width: 140px;
+    }
+    .dscard:hover .dsright{
+        transform: translate(100px,-350px);
+    }
+    .dscard:hover .dsleft{
+        transform: translateX(-230px);
+    }
+    .dsright{
+        bottom: -80px;
+    }
+    .dsleft{
+        right: 0px;
+    }
+}
+.bwcard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bwcircle{
+    visibility: hidden;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background:radial-gradient(#3F3F3F, #393939, #2f2f2f, #1f1f1f);
+    background-size: cover;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bwcard:hover .bwcircle{
+    clip-path: circle(500px);
+    visibility: visible;
+}
+.bwlogo{
+    position: absolute;
+    width: 190px;
+    transition: 0.5s;
+}
+.bwcard:hover .bwlogo{
+    transform: translateX(200%) rotate(100deg);
+}
+.bwtitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+.bwwidow{
+    color: red;
+}
+.bwright{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 130px;
+    transform: translateX(120px);
+    transition: 0.8s;
+}
+.bwcard:hover .bwright{
+    transform: translateX(0px);
+}
+.bwleft{
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    width: 180px;
+    transition: 1s;
+}
+.bwcard:hover .bwleft{
+    transform: translate(-145px, -230px);
+}
+@media(max-width:751px){
+    .bwcard{
+        width:380px;
+        height:420px;
+    }
+    .bwcircle{
+        width: 380px;
+        height: 420px;
+    }
+    .bwleft{
+        width: 165px;
+        top: 550px;
+    }
+    .bwcard:hover .bwleft{
+        transform: translate(-145px, -540px);
+    }
+    .bwcard:hover .bwright{
+        transform: translateX(-100px);
     }
 }
 @media(max-width:1325px){
