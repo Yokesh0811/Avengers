@@ -559,6 +559,12 @@ svg{
    transform: translateY(-50px);
    scale: 1.4;
 }
+.falconfly{
+    position: absolute;
+    left: 0;
+    bottom: -250px;
+    width: 250px;
+}
 @media(max-width:751px){
     .hulkleft{
         width: 100px;
@@ -579,5 +585,8 @@ svg{
 @media(max-width:1325px){
     .websitecontainer{
         flex-direction: column;
+    }
+    .falconfly{
+        display: none;
     }
 }
