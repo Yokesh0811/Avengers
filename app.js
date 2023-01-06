@@ -32,3 +32,14 @@ gsap.to(".falconfly", {
     y : -500,
     duration:2,
 });
+gsap.to(".antmanfly", {
+    scrollTrigger: {
+        trigger:".webpage4",
+        start:"center",
+        endTrigger: ".webpage5",
+        end:"center",
+        scrub:2,
+    },
+    x : -1250,
+    duration:3,
+});
