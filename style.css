@@ -31,7 +31,10 @@ body{
     filter: blur(180px);
 }
 .blurcircle22{
-    top: 60%;
+    top: 75%;
+}
+.blurcircle11{
+    top: 20%;
 }
 .blurcircle3{
     position: absolute;
@@ -480,7 +483,7 @@ svg{
 .smcard:hover .smlogo{
     transform: translateY(300%);
 }
-@media(max-width:751px){
+@media(max-width:651px){
     .smcard{
         width:380px;
         height:500px;
@@ -530,7 +533,7 @@ svg{
     visibility: visible;
 }
 .thlogo{
-    width: 135px;
+    width: 140px;
     z-index: 1;
     transition: 0.5s;
 }
@@ -568,14 +571,19 @@ svg{
     bottom: -250px;
     width: 250px;
 }
-@media(max-width:751px){
+@media(max-width:651px){
     .hulkleft{
         width: 100px;
-        top: 40%;
-        left: 22%;
+        top: 45%;
+        left: 10%;
     }
     .thcard{
         width:380px;
+        height:300px;
+    }
+    .thcircle{
+        width: 380px;
+        height: 300px;
     }
     .thtitle{
         font-size: 50px;
@@ -616,7 +624,7 @@ svg{
 }
 .dslogo{
     position: absolute;
-    width: 120px;
+    width: 130px;
     transition: 0.5s;
 }
 .dscard:hover .dslogo{
@@ -659,7 +667,7 @@ svg{
 .dscard:hover .dsright{
     transform: translate(100px,-100px);
 }
-@media(max-width:751px){
+@media(max-width:651px){
     .dscard{
         width:380px;
         height:485px;
@@ -715,7 +723,7 @@ svg{
 }
 .bwlogo{
     position: absolute;
-    width: 190px;
+    width: 200px;
     transition: 0.5s;
 }
 .bwcard:hover .bwlogo{
@@ -750,7 +758,37 @@ svg{
 .bwcard:hover .bwleft{
     transform: translate(-145px, -230px);
 }
-@media(max-width:751px){
+.purplestone{
+    position: absolute;
+    top: -150px;
+    left: 42%;
+    width: 150px;
+    animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(8%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes float {
+    0% {
+      -webkit-transform: translateY(0%);
+    }
+    50% {
+      -webkit-transform: translateY(8%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+    }
+  }
+@media(max-width:651px){
     .bwcard{
         width:380px;
         height:420px;
@@ -770,11 +808,187 @@ svg{
         transform: translateX(-100px);
     }
 }
+.thorcard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thorcircle{
+    visibility: hidden;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background: linear-gradient(to bottom, #19094677, rgba(0, 0, 0, 0.8)),  url('./AvengerAssets/thor-background.jpg');  
+    background-size: cover;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thorcard:hover .thorcircle{
+    clip-path: circle(500px);
+    visibility: visible;
+}
+.thorlogo{
+    position: absolute;
+    margin-left: -60px;
+    width: 240px;
+    transition: 0.5s;
+}
+.thorcard:hover .thorlogo{
+    transform: translateY(280px) rotate(-45deg);
+}
+.thortitle{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    margin-top: -100px;
+    font-size: 50px;
+    color: white;
+    background: -webkit-linear-gradient( #C7CCCE, #A2B8CA, #939FB3, #BDC7DC, #B8C1D6, #90A1B7, #60758C, #5B6475 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.thorleft{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    width: 130px;
+    transition: 0.5s;
+}
+.thorright{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    transition: 0.5s;
+    transform: translateX(300px);
+}
+.thorcard:hover .thorleft{
+    transform: translateX(100px);
+}
+.thorcard:hover .thorright{
+    transform: translateX(0px);
+}
+@media(max-width:651px){
+    .thorcard{
+        width:380px;
+        height:420px;
+    }
+    .thorcircle{
+        width: 380px;
+        height: 420px;
+    }
+    .thorright{
+        right: -50px;
+    }
+}
+.cmcard{
+    position: relative;
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cmcircle{
+    visibility: hidden;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    background: linear-gradient(135deg, #d41e31, #491f8f);  
+    background-size: cover;
+    clip-path: circle(100px);
+    transition: 0.6s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cmcard:hover .cmcircle{
+    clip-path: circle(500px);
+    visibility: visible;
+}
+.cmlogo{
+    position: absolute;
+    width: 180px;
+    transition: 0.5s;
+}
+.cmcard:hover .cmlogo{
+    opacity: 0;
+}
+.cmcenter{
+    position: absolute;
+    bottom: 0;
+    width: 550px;
+    transition: 0.5s;
+}
+.cmcard:hover .cmcenter{
+    transform: translateX(175px);
+}
+.cmmarvel{
+    position: absolute;
+    top:5px;
+    left: 16%;
+    width: 125px;
+}
+.cmtitle{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 200px;
+}
+.antmanfly{
+    position: absolute;
+    right: 0;
+    top: -100px;
+    width: 300px;
+}
+@media(max-width:651px){
+    .cmcard{
+        width:380px;
+        height:420px;
+    }
+    .cmcircle{
+        width: 380px;
+        height: 420px;
+    }
+    .cmcard:hover .cmcenter{
+        transform: translateX(0px);
+    }
+    .cmcenter{
+        width: 450px;
+    }
+    .cmtitle{
+        top: 20%;
+        left: 25%;
+    }
+    .cmmarvel{
+        left: 35%;
+    }
+}
+
 @media(max-width:1325px){
     .websitecontainer{
         flex-direction: column;
     }
     .falconfly{
+        display: none;
+    }
+    .purplestone{
+        display: none;
+    }
+    .antmanfly{
         display: none;
     }
 }
