@@ -1,3 +1,9 @@
+const loader = document.querySelector('.preloader');
+
+window.addEventListener('load', () => {
+    loader.style.display = "none";
+})
+
 const tl = gsap.timeline({default:{ease: 'power1.out'}})
 tl.to(".avengerslogo",{y: "0px", duration: 1});
 gsap.to(".hulkjump", { duration: 2,
